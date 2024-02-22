@@ -3,13 +3,13 @@ import { createSlice } from '@reduxjs/toolkit';
 const initialState = {
   slides: [
     {
-      title: "Mobile Phone",
+      title: "Móviles",
       image: "./src/assets/image/phone.jpg",
       description: "A mobile phone description",
       link: "/phone"
     },
     {
-      title: "Console",
+      title: "Consolas",
       image: "./src/assets/image/xbox.jpg",
       description: "A console description",
       link: "/console"
@@ -22,14 +22,14 @@ const initialState = {
       link: "/ordenadores"
     },
     {
-      title: "Tablet",
+      title: "Tablets",
       image: "../src/assets/image/tablet.jpg",
       description: "A tablet description",
       link: "/Tablet"
     },
     {
-      title: "HeadPhone",
-      image: "./src/assets/imag/headphone.jpg",
+      title: "Auriculares",
+      image: "./src/assets/image/headphone.jpg",
       description: "A headphone description",
       link: "/head"
     }
