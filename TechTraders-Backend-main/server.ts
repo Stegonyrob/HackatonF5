@@ -5,19 +5,27 @@ import CategoryRouter from './routes/CategoryRouter'
 import UserRouter from './routes/UserRouter'
 
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 app.use(express.json())
 
 
 app.use("/products", ProductRouter);
 app.use("/users", UserRouter);
-app.use("/category", CategoryRouter);
+app.use("/categories", CategoryRouter);
 
 
 
 app.listen(port, () => {
     console.log(`Server started on http://localhost:${port} !`);
 });
+
+
+
+
+
+
+
+
 
 
 

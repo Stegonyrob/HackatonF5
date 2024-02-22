@@ -3,28 +3,51 @@ import { connection } from "../database/config";
 const CategoryModel = {
 
     getAllCategories: async () => {
-        const [result, metadata] = await connection.query('SELECT * FROM category');
-        return result;
+        try {
+            const [result, metadata] = await connection.query('SELECT * FROM category');
+            return result;
+        } catch (error) {
+            console.log(error);
+            return null;
+        }
     },
-    getCategory: async (id: string) => {
-        const [result, metadata] = await connection.query('SELECT * FROM category WHERE id =?', [id]);
-        return result;
+    getCategory: async (id: any) => {
+        try {
+            const [result, metadata] = await connection.query('SELECT * FROM category WHERE id =?', [id]);
+            return result;
+        } catch (error) {
+            console.log(error);
+            return null;
+        }
     },
-    addCategory: async (name: string) => {
-
-        const [result, metadata] = await connection.query(`INSERT INTO category (category_name) VALUES ('${name}')`);
-        return result;
-
+    addCategory: async (name: any) => {
+        try {
+            const [result, metadata] = await connection.query(`INSERT INTO category (category_name) VALUES ('${name}')`);
+            return result;
+        } catch (error) {
+            console.log(error);
+            return null;
+        }
     },
 
-    updateCategory: async (id: string, name: string) => {
-        const [result, metadata] = await connection.query(`UPDATE category SET category_name = '${name}' WHERE id = ${id}`);
-        return result;
+    updateCategory: async (id: any, name: any) => {
+        try {
+            const [result, metadata] = await connection.query(`UPDATE category SET category_name = '${name}' WHERE id = ${id}`);
+            return result;
+        } catch (error) {
+            console.log(error);
+            return null;
+        }
     },
 
-    deleteCategory: async (id: string) => {
-        const [result, metadata] = await connection.query(`DELETE FROM category WHERE id = ${id}`);
-        return result;
+    deleteCategory: async (id: any) => {
+        try {
+            const [result, metadata] = await connection.query(`DELETE FROM category WHERE id = ${id}`);
+            return result;
+        } catch (error) {
+            console.log(error);
+            return null;
+        }
     },
     
 

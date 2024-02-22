@@ -11,3 +11,7 @@ CategoryRouter.route("/:id").delete(CategoryController.deleteCategory);
 
 
 export default CategoryRouter;
+
+
+
+

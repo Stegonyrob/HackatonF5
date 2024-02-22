@@ -1,7 +1,7 @@
 import { Request, Response } from "express";
 import CategoryModel from "../models/CategoryModel";
 
-const ProductController = {
+const CategoryController = {
 
     getAllCategories: async (req: Request, res: Response) => {
         try {
@@ -60,4 +60,4 @@ const ProductController = {
     }
 }
 
-export default ProductController;
+export default CategoryController;
