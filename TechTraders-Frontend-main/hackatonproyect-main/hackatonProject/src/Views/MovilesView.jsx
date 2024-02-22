@@ -7,6 +7,8 @@ const MovilesView = () => {
   return (
     <div className='m-5 mb-3'>
 
+      <h1>¡Nuestros móviles!</h1>
+
     <CardGroup className="g-5">
       <Card>
         <Card.Img variant="top" src="https://img.pccomponentes.com/articles/1077/10777839/140-apple-iphone-15-pro-128gb-titanio-natural-libre.jpg" />

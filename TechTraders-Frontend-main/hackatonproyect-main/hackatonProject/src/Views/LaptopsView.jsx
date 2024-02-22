@@ -8,6 +8,8 @@ const LaptopsView = () => {
   return (
     <div className='m-5 mb-3'>
 
+      <h1>¡Nuestras laptops!</h1>
+
     <CardGroup className="g-5">
       <Card>
         <Card.Img variant="top" src="https://img.pccomponentes.com/articles/1081/10811718/1148-asus-rog-strix-g16-g614jvr-n4003-intel-core-i9-14900hx-32gb-1tb-ssd-rtx-4060-16.jpg" />
